@@ -1,0 +1,40 @@
+Alphabet: 
+a. Upper (A-Z) and lower case letters (a-z) of the English alphabet 
+ b. Underline character '_'; 
+ c. Decimal digits (0-9); 
+
+1. Lexic: 
+ a.Special symbols, representing: 
+- operators + += - -= * *= / /= = < <= >= == != ! 
+- separators [ ] { } ; space () , . : 
+- reserved words
+	char const string int long else if while for foreach read show break 
+	skip true false sqrt 
+
+b.Identifiers
+-a sequence of letters and digits, such that the first character is a letter; the rule is: 
+ identifier = letter{letter|digit}
+ digit = "0" | "1" |...| "9"
+ nonzerodigit = "1" |...| "9"
+
+c.Constants 
+1.Integer - rule: 
+ noconst="+"no | "-"no | no 
+ no=nonzerodigit{no|digit} 
+2.Character 
+ character='letter' | 'digit'
+3.String 
+ constchar = "string" 
+ string = char{string} 
+ char = letter | digit
+
+
+
+
+
+
+
+ 
+
+ 
+

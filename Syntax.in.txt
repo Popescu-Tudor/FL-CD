@@ -1,0 +1,23 @@
+4.Syntax:
+REL = "<" | "<=" | "==" | "<>" | ">=" | ">" 
+cond = exp REL exp
+whilestmt = "WHILE" "(" condition ")" "[" stmt "]"
+ifstmt = "IF" "(" condition "[" stmt "]" "ELSE" "[" stmt "]"
+forstmt = "FOR" "(" stmt ";" stmt ";" "stmt" ")" "[" stmt "]" 
+structstmt = cmpdstmt | ifstmt | whilestmt | forstmt
+iostmt = "READ" | "WRITE" "(" IDENTIFIER ")"
+factor = "(" expression ")" | IDENTIFIER
+term = term "*" factor | factor
+expression = expression "+" term | term
+assignstmt = IDENTIFIER "=" expression
+simplstmt =  assignstmt | iostmt
+stmt = simplstmt | iostsmt
+stmtlist = stmt | stmt ";" stmt
+cmpdstmt = "BEGIN" stmtlist "END"
+type = type1|arraydecl
+arratdecl = "ARRAY" "[" nr "]" "OF" type1
+type1 = "BOOLEAN"| "CHAR" | "INTEGER" | "REAL"
+declaration = IDENTIFIER ":" type
+decllist = declaration | declaration ";" decllist
+program = "VAR" declist ";" cmpdstmt "."
+
