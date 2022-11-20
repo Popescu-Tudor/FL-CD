@@ -1,0 +1,5 @@
+bool a=false;
+int b;
+set(b);
+a=((sqrt(b)*sqrt(b))==b);
+show(a);

@@ -1,0 +1,6 @@
+int 2a;
+char b='KO';
+char a='a';
+set(2a);
+2a=[10*3];
+show(2a);

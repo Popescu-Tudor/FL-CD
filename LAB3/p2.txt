@@ -1,0 +1,7 @@
+bool a=false;
+int b;
+set(b);
+if(b // 2) [
+a=false;]
+else [ a=true;]
+show(a);
