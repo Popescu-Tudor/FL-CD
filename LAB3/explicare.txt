@@ -1,0 +1,15 @@
+LAB 3 Tudor Popescu
+
+Scanner:
+	- has in itself all the operators, separators and de regex that define constants and identifiers as well as a list that will hold every word from the file 
+
+methods:
+	-separate: given a line and a line number it will go through every character and add them to the items list. We check if they are an operator, if they are we check the next characters in case of multiple characters operators (like ==), then if they are separator and if they are none of the two statet above it will just go to the next one
+	
+	-checkOp: used in separate, we check if the operator is a multiple character operator, and then returns the operator
+
+	-isOperator: checks if the item is an operator
+
+	-isSeparator: checks if the item is an separator
+
+	-run: runs the program, takes the problem based on what file we choose to read from, uses the method separate on each line from the file, removes all blank spaces from items, then goes through all items and checks if they are tokens, separators or operators then they will be added in PIF, otherwise if they are identifiers or constants they are added in ST, and if they are not either we print an error.
