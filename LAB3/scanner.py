@@ -108,7 +108,6 @@ def run():
         if error == False:
             print("Lexically correct")
 
-        #print(scanner.tokens)
         stOUT.write("Symbol table using hash table \n")
         stOUT.write(str(ST))
         for p in PIF:
