@@ -1,0 +1,17 @@
+Transitions
+p,a-z,a
+p,A-Z,a
+a,a-z,a
+a,A-Z,a
+a,0-9,a
+Alphabet
+a-z
+A-Z
+0-9
+States
+p
+a
+Initial_states
+p
+Final_states
+a
