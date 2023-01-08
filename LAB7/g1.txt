@@ -1,0 +1,9 @@
+S A C B A' A''
+k O d a c b r
+S
+S:A k O
+A:a A''
+A'':B A'|C A'
+C:c
+B:b B C|r
+A':d A'|eps
